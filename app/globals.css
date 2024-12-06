@@ -62,10 +62,15 @@
 }
 @layer base {
   * {
-    @apply border-border;
+   @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+     @apply bg-background text-foreground;
   }
 }
 
+@layer components {
+  .navbar-link {
+    @apply font-medium text-gray-500 transition-colors hover:text-blue-500; 
+  }
+}
